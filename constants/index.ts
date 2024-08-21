@@ -146,6 +146,12 @@ export const Frontend_skill: Skill[] = [
     width: 80,
     height: 80,
   },
+  {
+    skill_name: "Bootstrap",
+    Image: "/bootstrap.jpg",
+    width: 80,
+    height: 80,
+  },
 ];
 
 export const Backend_skill: Skill[] = [
