@@ -44,8 +44,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px] text-center md:text-left"
         >
-          I'm Mounir a fullstack software developer with experience in website,
-          mobile, and software development. check out my projects and skills
+          I&apos;m Mounir, a fullstack software developer with experience in
+          website, mobile, and software development. Check out my projects and
+          skills.
         </motion.p>
         <motion.a
           href="https://mounirachir.github.io/cv/"
