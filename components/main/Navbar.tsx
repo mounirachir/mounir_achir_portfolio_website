@@ -17,13 +17,13 @@ const Navbar = () => {
             height={70}
             className="cursor-pointer hover:animate-slowspin"
           />
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <span className="md:text-sm font-bold ml-[10px] hidden lg:block text-gray-300">
             Mounir Achir
           </span>
         </a>
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex w-full h-auto items-center justify-between border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a className="cursor-pointer" href="#about-me">
+            <a className=" cursor-pointer" href="#about-me">
               Home
             </a>
             <a className="cursor-pointer" href="#skills">
@@ -36,13 +36,19 @@ const Navbar = () => {
         </div>
         <div className="flex flex-row gap-5">
           {Socials.map((social) => (
-            <Image
-              alt={social.name}
-              src={social.src}
-              key={social.name}
-              width={24}
-              height={24}
-            />
+            <a
+              href="https://www.instagram.com/mounir___achir/"
+              target="_blank"
+              className="cursor-pointer"
+            >
+              <Image
+                alt={social.name}
+                src={social.src}
+                key={social.name}
+                width={24}
+                height={24}
+              />
+            </a>
           ))}
         </div>
       </div>

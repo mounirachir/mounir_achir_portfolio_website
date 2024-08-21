@@ -1,52 +1,60 @@
 import React from "react";
-import { FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
-import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
-  RxLinkedinLogo,
-  RxTwitterLogo,
-} from "react-icons/rx";
+import { FaYoutube } from "react-icons/fa";
+import { RxGithubLogo, RxInstagramLogo, RxLinkedinLogo } from "react-icons/rx";
+
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
+    <div
+      id="footer"
+      className=" w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]"
+    >
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px] ">Community</div>
-            <p className="flex flex-col items-center my-[15px] cursor-pointer">
-              <FaYoutube />
-              <span className="text-[15px] ml-[6px] m-2">Youtube</span>
-              <RxGithubLogo />
-              <span className="text-[15px] ml-[6px]  m-2">Github</span>
-              <RxDiscordLogo />
-              <span className="text-[15px] ml-[6px]  m-2">Discord</span>
-            </p>
+            <div className="font-bold text-[16px]">Community</div>
+            <div className="flex flex-col items-center my-[15px]">
+              <a
+                href="https://www.youtube.com/channel/UC1hVGE69n1a4aCXEzDYYyuA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center my-2 cursor-pointer"
+              >
+                <FaYoutube />
+                <span className="text-[15px] ml-[6px]">Youtube</span>
+              </a>
+              <a
+                href="https://github.com/mounirachir"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center my-2 cursor-pointer"
+              >
+                <RxGithubLogo />
+                <span className="text-[15px] ml-[6px]">Github</span>
+              </a>
+            </div>
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px] ">Social Media</div>
-            <p className="flex flex-col items-center my-[15px] cursor-pointer">
-              <RxInstagramLogo />
-              <span className="text-[15px] ml-[6px]  m-2">Instagram</span>
-              <RxTwitterLogo />
-              <span className="text-[15px] ml-[6px]  m-2">Twitter</span>
-              <RxLinkedinLogo />
-              <span className="text-[15px] ml-[6px]  m-2">LinkedIn</span>
-            </p>
-          </div>
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px] ">About</div>
-            <p className="flex flex-col items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]  m-2">
-                Become a sponsor
-              </span>
-
-              <span className="text-[15px] ml-[6px]  m-2">Learn about me</span>
-
-              <span className="text-[15px] ml-[6px]  m-2">
-                mistamounir02@gmail.com
-              </span>
-            </p>
+            <div className="font-bold text-[16px]">Social Media</div>
+            <div className="flex flex-col items-center my-[15px]">
+              <a
+                href="https://www.instagram.com/mounir___achir/"
+                target="_blank"
+                className="flex items-center my-2"
+                style={{ cursor: "pointer" }}
+              >
+                <RxInstagramLogo />
+                <span className="text-[15px] ml-[6px]">Instagram</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mounir-achir-7375a7317/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center my-2 cursor-pointer"
+              >
+                <RxLinkedinLogo />
+                <span className="text-[15px] ml-[6px]">LinkedIn</span>
+              </a>
+            </div>
           </div>
         </div>
         <div className="mb-[20px] text-center text-[15px]">
