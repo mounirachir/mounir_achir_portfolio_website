@@ -1,4 +1,15 @@
-export const Skill_data = [
+// constants.ts
+
+// Define the Skill type
+export interface Skill {
+  skill_name: string;
+  Image: string;
+  width: number;
+  height: number;
+}
+
+// Define the skill arrays with the Skill type
+export const Skill_data: Skill[] = [
   {
     skill_name: "Html 5",
     Image: "/html.png",
@@ -86,7 +97,7 @@ export const Socials = [
   },
 ];
 
-export const Frontend_skill = [
+export const Frontend_skill: Skill[] = [
   {
     skill_name: "Html 5",
     Image: "/html.png",
@@ -111,7 +122,6 @@ export const Frontend_skill = [
     width: 80,
     height: 80,
   },
-
   {
     skill_name: "React",
     Image: "/react.png",
@@ -124,7 +134,6 @@ export const Frontend_skill = [
     width: 80,
     height: 80,
   },
-
   {
     skill_name: "Type Script",
     Image: "/ts.png",
@@ -139,7 +148,7 @@ export const Frontend_skill = [
   },
 ];
 
-export const Backend_skill = [
+export const Backend_skill: Skill[] = [
   {
     skill_name: "Node js",
     Image: "/node-js.png",
@@ -158,7 +167,6 @@ export const Backend_skill = [
     width: 40,
     height: 40,
   },
-
   {
     skill_name: "My SQL",
     Image: "/mysql.png",
@@ -167,8 +175,6 @@ export const Backend_skill = [
   },
 ];
 
-export const Full_stack = [
-  
-];
+export const Full_stack: Skill[] = []; // Define full stack skills here if needed
 
-export const Other_skill = [];
+export const Other_skill: Skill[] = []; // Define other skills here if needed
