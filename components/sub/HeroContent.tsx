@@ -45,8 +45,7 @@ const HeroContent = () => {
           className="text-lg text-gray-400 my-5 max-w-[600px] text-center md:text-left"
         >
           I&apos;m Mounir, a fullstack software developer with experience in
-          website, mobile, and software development. Check out my projects and
-          skills.
+          website and software development. Check out my projects and skills.
         </motion.p>
         <motion.a
           href="https://mounirachir.github.io/cv/"

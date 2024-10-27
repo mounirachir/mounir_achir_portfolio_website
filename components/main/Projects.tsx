@@ -10,7 +10,18 @@ const Projects = () => {
       <h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
         My Projects
       </h1>
-      <div className="h-full w-full md:flex md:flex-col gap-10 px-10">
+      <div className="h-full w-full md:grid md:grid-cols-3 gap-10 px-10">
+        <a
+          href="https://live-arvea-nature.pantheonsite.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ProjectCard
+            src="/arvea-remake.png"
+            title="Arvea Remake"
+            description="As part of my internship at a 360° marketing agency, I recreated the Arvea-Nature website on WordPress, designing a clean and user-friendly interface to highlight their parapharmaceutical products ."
+          />
+        </a>
         <a
           href="https://fitness-test-z77a.onrender.com"
           target="_blank"
@@ -19,32 +30,10 @@ const Projects = () => {
           <ProjectCard
             src="/fitness-app.png"
             title="The Fit-Club"
-            description="A full-stack fitness app that helps beginners start their health journey by generating fitness plans automatically for them depending on their personal information and preferences ."
+            description="I developed a full-stack fitness website that assists beginners in kickstarting their health journey, automatically generating fitness plans tailored to their personal details and specific preferences ."
           />
         </a>
 
-        <a
-          href="https://mern-example-qoms.onrender.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ProjectCard
-            src="/account.png"
-            title="Account Creation App"
-            description="A simple full-stack app that focuses on user authentification and it allows him to create an account in it and log in and out of it to get access to his dashboard ."
-          />
-        </a>
-        <a
-          href="https://to-do-list-react-1.onrender.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ProjectCard
-            src="/todolist.png"
-            title="To-Do-List"
-            description="A simple to do list app that keeps track of your daily goals by saving them in the local storage of the browser ."
-          />
-        </a>
         <a
           href=" https://mounirachir.github.io/nostalgic-games/"
           target="_blank"
@@ -53,21 +42,11 @@ const Projects = () => {
           <ProjectCard
             src="/nostalgia.png"
             title="Nostalgic Games"
-            description="A website that contains 4 popular games we used to play when we were kids, they are the snake, tick tack toe, ping pong and rock paper scissors ."
+            description="I created a dynamic website featuring four nostalgic games from our childhood days. This includes timeless classics like Snake, Tic-Tac-Toe, Ping Pong, and Rock-Paper-Scissors ."
           />
         </a>
-        <a
-          href="https://react-check-4.onrender.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <ProjectCard
-            src="/movie.png"
-            title="Movie Library"
-            description="A movie library that allows the user to add movies and filter them based on their names and ratings and he can even watch the movie trailers in it ."
-          />
-        </a>
-
+      </div>
+      <div className="mt-5 h-full w-full md:grid md:grid-cols-2 gap-10 px-10">
         <a
           href="https://mounirachir.github.io/weather-app/"
           target="_blank"
@@ -76,7 +55,7 @@ const Projects = () => {
           <ProjectCard
             src="/weather.png"
             title="Weather App"
-            description="A simple weather app that gives you weather information about the place you look for in the search bar such as the humidity, wind speed and temperature ."
+            description="A simple weather app that gives you weather information about the place you look for in the search bar ."
           />
         </a>
         <a

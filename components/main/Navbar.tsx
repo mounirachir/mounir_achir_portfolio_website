@@ -11,11 +11,11 @@ const Navbar = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
+            src="/mypic.jpg"
             alt="logo"
             width={70}
             height={70}
-            className="cursor-pointer hover:animate-slowspin"
+            className="cursor-pointer hover:animate-slowspin border-2 border-gray-300 rounded-full mt-2"
           />
           <span className="md:text-sm font-bold ml-[10px] hidden lg:block text-gray-300">
             Mounir Achir
